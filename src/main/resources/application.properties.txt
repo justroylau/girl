@@ -1,0 +1,3 @@
+#不用了 该用 application.yml
+server.port=8080
+server.context-path=/girl

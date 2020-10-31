@@ -1,0 +1,23 @@
+server:
+  port: 8080
+  ##context-path: girl
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://zhuihoude.com:3306/test
+    username: test
+    password: test
+  jpa:
+    hibernate:
+      ddl-auto: update
+      ## update 不会删表
+      ## create 会删除表
+      ## create-drop 用完删除
+      ## none noting
+      ## validate 验证是否一致 报错
+    show-sql: true
+girl:
+  cupSize: B
+  age: 18
+  content: "cupSize:${girl.cupSize}, age:${girl.age}" ##配置用使用配置
+
