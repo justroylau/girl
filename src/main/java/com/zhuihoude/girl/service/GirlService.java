@@ -13,7 +13,7 @@ public class GirlService {
     @Autowired
     private GirlRepository girlRepository;
 
-    //@Transactional //事务
+    @Transactional //事务
     public void insertTwo() {
 
         Girl girlA = new Girl();
@@ -25,7 +25,6 @@ public class GirlService {
         girlB.setCupSize("G");
         girlB.setAge(13);
         girlRepository.save(girlB);
-
 
     }
 }
